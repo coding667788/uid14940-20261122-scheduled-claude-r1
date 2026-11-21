@@ -1,0 +1,1375 @@
+{
+  "case_id": "case-reuse-1",
+  "data_symbols": 12,
+  "ops": [
+    {
+      "manifest": {
+        "commitment": "sha256:0810ef115052fe4254586fc2bc2ad56f7f4d639ddb95b948a0b04fd64093b1d6",
+        "data_symbols": 12,
+        "deadline": 100,
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "manifest_id": "M-DOCR-G1",
+        "recipient_domain": "inbox-1",
+        "segments": [
+          {
+            "length": 4,
+            "name": "head",
+            "start": 0
+          },
+          {
+            "length": 4,
+            "name": "mid",
+            "start": 4
+          },
+          {
+            "length": 4,
+            "name": "tail",
+            "start": 8
+          }
+        ],
+        "source_domains": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "epsilon",
+          "zeta"
+        ]
+      },
+      "op": "register_manifest",
+      "request_id": "reg-g1"
+    },
+    {
+      "manifest": {
+        "commitment": "sha256:453a232217281e9b94d645cb68324799b90131f5c3fd85636cfc7c5345549e09",
+        "data_symbols": 12,
+        "deadline": 100,
+        "doc_id": "DOC-R",
+        "generation": 2,
+        "manifest_id": "M-DOCR-G2",
+        "recipient_domain": "inbox-1",
+        "source_domains": [
+          "alpha",
+          "beta",
+          "gamma",
+          "delta",
+          "epsilon",
+          "zeta"
+        ]
+      },
+      "op": "register_manifest",
+      "request_id": "reg-g2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-0",
+        "payload": 137,
+        "receipt_id": "rr-001",
+        "row": [
+          100,
+          244,
+          58,
+          164,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 2,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-1",
+        "payload": 93,
+        "receipt_id": "rr-002",
+        "row": [
+          209,
+          207,
+          189,
+          214,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 4,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-2",
+        "payload": 49,
+        "receipt_id": "rr-003",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          201,
+          24,
+          134,
+          158,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 2,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 6,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-3",
+        "payload": 93,
+        "receipt_id": "rr-004",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          153,
+          64,
+          28,
+          168,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 3,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 8,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-3"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-4",
+        "payload": 205,
+        "receipt_id": "rr-005",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          202,
+          253,
+          113,
+          137
+        ],
+        "shard_index": 4,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 10,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-4"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-5",
+        "payload": 109,
+        "receipt_id": "rr-006",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          216,
+          239,
+          153
+        ],
+        "shard_index": 5,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 12,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-5"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-beta-1-0",
+        "payload": 7,
+        "receipt_id": "rr-007",
+        "row": [
+          95,
+          96,
+          241,
+          229,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "beta",
+        "source_instance": "beta-1",
+        "time": 14,
+        "trusted": true
+      },
+      "request_id": "sub-beta-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-beta-1-1",
+        "payload": 229,
+        "receipt_id": "rr-008",
+        "row": [
+          87,
+          208,
+          17,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "beta",
+        "source_instance": "beta-1",
+        "time": 16,
+        "trusted": true
+      },
+      "request_id": "sub-beta-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-beta-1-2",
+        "payload": 234,
+        "receipt_id": "rr-009",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          132,
+          62,
+          219,
+          121,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 2,
+        "source_domain": "beta",
+        "source_instance": "beta-1",
+        "time": 18,
+        "trusted": true
+      },
+      "request_id": "sub-beta-2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-beta-1-3",
+        "payload": 201,
+        "receipt_id": "rr-010",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          173,
+          83,
+          150,
+          128,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 3,
+        "source_domain": "beta",
+        "source_instance": "beta-1",
+        "time": 20,
+        "trusted": true
+      },
+      "request_id": "sub-beta-3"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-beta-1-4",
+        "payload": 46,
+        "receipt_id": "rr-011",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          170,
+          206,
+          95,
+          223
+        ],
+        "shard_index": 4,
+        "source_domain": "beta",
+        "source_instance": "beta-1",
+        "time": 22,
+        "trusted": true
+      },
+      "request_id": "sub-beta-4"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-beta-1-5",
+        "payload": 219,
+        "receipt_id": "rr-012",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          157,
+          107,
+          9,
+          206
+        ],
+        "shard_index": 5,
+        "source_domain": "beta",
+        "source_instance": "beta-1",
+        "time": 24,
+        "trusted": true
+      },
+      "request_id": "sub-beta-5"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-gamma-1-0",
+        "payload": 255,
+        "receipt_id": "rr-013",
+        "row": [
+          114,
+          22,
+          254,
+          36,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "gamma",
+        "source_instance": "gamma-1",
+        "time": 26,
+        "trusted": true
+      },
+      "request_id": "sub-gamma-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-gamma-1-1",
+        "payload": 244,
+        "receipt_id": "rr-014",
+        "row": [
+          114,
+          48,
+          30,
+          170,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "gamma",
+        "source_instance": "gamma-1",
+        "time": 28,
+        "trusted": true
+      },
+      "request_id": "sub-gamma-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-gamma-1-2",
+        "payload": 188,
+        "receipt_id": "rr-015",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          15,
+          201,
+          237,
+          120,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 2,
+        "source_domain": "gamma",
+        "source_instance": "gamma-1",
+        "time": 30,
+        "trusted": true
+      },
+      "request_id": "sub-gamma-2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-gamma-1-3",
+        "payload": 42,
+        "receipt_id": "rr-016",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          103,
+          248,
+          101,
+          127,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 3,
+        "source_domain": "gamma",
+        "source_instance": "gamma-1",
+        "time": 32,
+        "trusted": true
+      },
+      "request_id": "sub-gamma-3"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-gamma-1-4",
+        "payload": 31,
+        "receipt_id": "rr-017",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          205,
+          171,
+          133,
+          156
+        ],
+        "shard_index": 4,
+        "source_domain": "gamma",
+        "source_instance": "gamma-1",
+        "time": 34,
+        "trusted": true
+      },
+      "request_id": "sub-gamma-4"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-gamma-1-5",
+        "payload": 99,
+        "receipt_id": "rr-018",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          139,
+          11,
+          162,
+          169
+        ],
+        "shard_index": 5,
+        "source_domain": "gamma",
+        "source_instance": "gamma-1",
+        "time": 36,
+        "trusted": true
+      },
+      "request_id": "sub-gamma-5"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-delta-1-0",
+        "payload": 33,
+        "receipt_id": "rr-019",
+        "row": [
+          181,
+          109,
+          165,
+          233,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "delta",
+        "source_instance": "delta-1",
+        "time": 38,
+        "trusted": true
+      },
+      "request_id": "sub-delta-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-delta-1-1",
+        "payload": 35,
+        "receipt_id": "rr-020",
+        "row": [
+          76,
+          184,
+          195,
+          22,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "delta",
+        "source_instance": "delta-1",
+        "time": 40,
+        "trusted": true
+      },
+      "request_id": "sub-delta-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-delta-1-2",
+        "payload": 239,
+        "receipt_id": "rr-021",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          48,
+          209,
+          42,
+          160,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 2,
+        "source_domain": "delta",
+        "source_instance": "delta-1",
+        "time": 42,
+        "trusted": true
+      },
+      "request_id": "sub-delta-2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-delta-1-3",
+        "payload": 160,
+        "receipt_id": "rr-022",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          65,
+          61,
+          171,
+          96,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 3,
+        "source_domain": "delta",
+        "source_instance": "delta-1",
+        "time": 44,
+        "trusted": true
+      },
+      "request_id": "sub-delta-3"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-delta-1-4",
+        "payload": 147,
+        "receipt_id": "rr-023",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          166,
+          214,
+          162,
+          47
+        ],
+        "shard_index": 4,
+        "source_domain": "delta",
+        "source_instance": "delta-1",
+        "time": 46,
+        "trusted": true
+      },
+      "request_id": "sub-delta-4"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-delta-1-5",
+        "payload": 162,
+        "receipt_id": "rr-024",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          125,
+          12,
+          98,
+          147
+        ],
+        "shard_index": 5,
+        "source_domain": "delta",
+        "source_instance": "delta-1",
+        "time": 48,
+        "trusted": true
+      },
+      "request_id": "sub-delta-5"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-epsilon-1-0",
+        "payload": 115,
+        "receipt_id": "rr-025",
+        "row": [
+          29,
+          46,
+          138,
+          110,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "epsilon",
+        "source_instance": "epsilon-1",
+        "time": 50,
+        "trusted": true
+      },
+      "request_id": "sub-epsilon-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-epsilon-1-1",
+        "payload": 233,
+        "receipt_id": "rr-026",
+        "row": [
+          221,
+          56,
+          61,
+          198,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "epsilon",
+        "source_instance": "epsilon-1",
+        "time": 52,
+        "trusted": true
+      },
+      "request_id": "sub-epsilon-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-epsilon-1-2",
+        "payload": 70,
+        "receipt_id": "rr-027",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          221,
+          107,
+          144,
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 2,
+        "source_domain": "epsilon",
+        "source_instance": "epsilon-1",
+        "time": 54,
+        "trusted": true
+      },
+      "request_id": "sub-epsilon-2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-epsilon-1-3",
+        "payload": 135,
+        "receipt_id": "rr-028",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          148,
+          212,
+          69,
+          95,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 3,
+        "source_domain": "epsilon",
+        "source_instance": "epsilon-1",
+        "time": 56,
+        "trusted": true
+      },
+      "request_id": "sub-epsilon-3"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-epsilon-1-4",
+        "payload": 37,
+        "receipt_id": "rr-029",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          138,
+          82,
+          225,
+          74
+        ],
+        "shard_index": 4,
+        "source_domain": "epsilon",
+        "source_instance": "epsilon-1",
+        "time": 58,
+        "trusted": true
+      },
+      "request_id": "sub-epsilon-4"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-epsilon-1-5",
+        "payload": 110,
+        "receipt_id": "rr-030",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          135,
+          179,
+          114,
+          250
+        ],
+        "shard_index": 5,
+        "source_domain": "epsilon",
+        "source_instance": "epsilon-1",
+        "time": 60,
+        "trusted": true
+      },
+      "request_id": "sub-epsilon-5"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-zeta-1-0",
+        "payload": 24,
+        "receipt_id": "rr-031",
+        "row": [
+          129,
+          184,
+          155,
+          123,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "zeta",
+        "source_instance": "zeta-1",
+        "time": 62,
+        "trusted": true
+      },
+      "request_id": "sub-zeta-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-zeta-1-1",
+        "payload": 124,
+        "receipt_id": "rr-032",
+        "row": [
+          165,
+          202,
+          206,
+          157,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "zeta",
+        "source_instance": "zeta-1",
+        "time": 64,
+        "trusted": true
+      },
+      "request_id": "sub-zeta-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-zeta-1-2",
+        "payload": 202,
+        "receipt_id": "rr-033",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          127,
+          17,
+          135,
+          127,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 2,
+        "source_domain": "zeta",
+        "source_instance": "zeta-1",
+        "time": 66,
+        "trusted": true
+      },
+      "request_id": "sub-zeta-2"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-zeta-1-3",
+        "payload": 134,
+        "receipt_id": "rr-034",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          199,
+          45,
+          91,
+          116,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 3,
+        "source_domain": "zeta",
+        "source_instance": "zeta-1",
+        "time": 68,
+        "trusted": true
+      },
+      "request_id": "sub-zeta-3"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-zeta-1-4",
+        "payload": 194,
+        "receipt_id": "rr-035",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          60,
+          84,
+          79,
+          214
+        ],
+        "shard_index": 4,
+        "source_domain": "zeta",
+        "source_instance": "zeta-1",
+        "time": 70,
+        "trusted": true
+      },
+      "request_id": "sub-zeta-4"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-zeta-1-5",
+        "payload": 139,
+        "receipt_id": "rr-036",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          47,
+          202,
+          51,
+          101
+        ],
+        "shard_index": 5,
+        "source_domain": "zeta",
+        "source_instance": "zeta-1",
+        "time": 72,
+        "trusted": true
+      },
+      "request_id": "sub-zeta-5"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 2,
+        "link": "link-alpha-1-0",
+        "payload": 238,
+        "receipt_id": "rr-037",
+        "row": [
+          110,
+          229,
+          185,
+          87,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 74,
+        "trusted": true
+      },
+      "request_id": "sub-g2-0"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 2,
+        "link": "link-alpha-1-1",
+        "payload": 103,
+        "receipt_id": "rr-038",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          1,
+          14,
+          254,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 1,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 76,
+        "trusted": true
+      },
+      "request_id": "sub-g2-1"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 2,
+        "link": "link-alpha-1-2",
+        "payload": 72,
+        "receipt_id": "rr-039",
+        "row": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          249,
+          66,
+          229,
+          168
+        ],
+        "shard_index": 2,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 78,
+        "trusted": true
+      },
+      "request_id": "sub-g2-2"
+    },
+    {
+      "op": "restart"
+    },
+    {
+      "op": "submit",
+      "receipt": {
+        "doc_id": "DOC-R",
+        "generation": 1,
+        "link": "link-alpha-1-0",
+        "payload": 137,
+        "receipt_id": "rr-001",
+        "row": [
+          100,
+          244,
+          58,
+          164,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "shard_index": 0,
+        "source_domain": "alpha",
+        "source_instance": "alpha-1",
+        "time": 2,
+        "trusted": true
+      },
+      "request_id": "sub-alpha-0"
+    },
+    {
+      "op": "concurrent_submit",
+      "requests": [
+        {
+          "receipt": {
+            "doc_id": "DOC-R",
+            "generation": 1,
+            "link": "link-delta-1-0",
+            "payload": 40,
+            "receipt_id": "rr-conflict-a",
+            "row": [
+              181,
+              109,
+              165,
+              233,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "shard_index": 0,
+            "source_domain": "delta",
+            "source_instance": "delta-1",
+            "time": 38,
+            "trusted": true
+          },
+          "request_id": "race-a"
+        },
+        {
+          "receipt": {
+            "doc_id": "DOC-R",
+            "generation": 1,
+            "link": "link-delta-1-0",
+            "payload": 42,
+            "receipt_id": "rr-conflict-b",
+            "row": [
+              181,
+              109,
+              165,
+              233,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "shard_index": 0,
+            "source_domain": "delta",
+            "source_instance": "delta-1",
+            "time": 38,
+            "trusted": true
+          },
+          "request_id": "race-b"
+        }
+      ]
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 1,
+      "op": "status"
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 1,
+      "op": "release",
+      "request_id": "rel-g1"
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 1,
+      "op": "release",
+      "request_id": "rel-g1"
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 2,
+      "op": "release",
+      "request_id": "rel-g2"
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 1,
+      "op": "flag_quarantine",
+      "reason": "late_external_evidence",
+      "request_id": "flag-gamma",
+      "source_instance": "gamma-1"
+    },
+    {
+      "op": "restart"
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 1,
+      "op": "status"
+    },
+    {
+      "doc_id": "DOC-R",
+      "generation": 2,
+      "op": "status"
+    }
+  ]
+}
